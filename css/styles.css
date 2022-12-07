@@ -59,6 +59,13 @@ body {
     color: var(--title-color);
 }
 
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
 /* ----- header, footer ----- */
 
 .logo-header {
