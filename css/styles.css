@@ -51,13 +51,29 @@ body {
     padding: 0;
     list-style-type: none;
 }
-
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .btn {
     cursor: pointer;
     border: none;
 }
 
 /* ----- common ----- */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .font-raleway {
     font-family: Raleway;
     font-weight: 800;
@@ -73,13 +89,17 @@ body {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1158px;
     margin: 0 auto;
     padding-left: 9px;
     padding-right: 9px;
 }
 
 /* ----- header, footer ----- */
+
+.header .container {
+    padding: 24px 156px;
+}
 
 .logo-header {
     color: var(--title-color);
@@ -98,6 +118,7 @@ body {
 
 .logo-footer {
     color: var(--footer-descr-color);
+    margin-bottom: 16px;
 }
 
 .nav-link {
@@ -119,8 +140,13 @@ body {
     color: var(--logo-web-color);
 }
 
+.footer .container {
+    padding: 100px 156px;
+}
+
 .footer-descr {
     color: var(--footer-descr-color);
+    max-width: 272px;
 }
 
 /* ----- main ----- */
@@ -130,6 +156,11 @@ body {
 .hero,
 .footer{
     background-color: var(--footer-hero-color);
+}
+
+.hero .container {
+    padding-top:192px;
+    margin-bottom: 120px;
 }
 
 .hero-title {
@@ -162,12 +193,23 @@ body {
     background-color: var(--hero-click-color);
 }
 /* ----- section ----- */
+
+.team .container,
+.works .contanier {
+    padding-top: 32px;
+}
+
+.team {
+    background-color: var(--logo-footer-color);
+}
+
 .views .section-title,
 .team-list .section-title,
 .benefits-list .section-title {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
+    margin-top: 8px;
 }
 
 .works-title,
@@ -176,7 +218,9 @@ body {
     font-size: 36px;
     line-height: 1.1;
     text-align: center;
-    text-transform: capitalize;         
+    text-transform: capitalize; 
+    margin-bottom: 72px;
+         
 }
 
 /* ----- Portfolio ----- */
