@@ -254,6 +254,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--logo-web-color);
     background-color: var(--logo-footer-color);
 
+    padding: 16px 8px;
     border: 1px solid var(--footer-descr-color);
     border-radius: 4px;
 }
