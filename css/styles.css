@@ -132,6 +132,10 @@ img {
     color: var(--page-color);
 }
 
+.nav-link:active {
+    color: var(--logo-web-color);
+}
+
 .contacts {
     gap: 40px;
 }
