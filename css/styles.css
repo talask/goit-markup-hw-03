@@ -24,6 +24,7 @@ body {
 .link {
     text-decoration: none;
     color: inherit;
+    display: inline-block;
 }
 
 .list {
@@ -35,6 +36,11 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+img {
+    display: block;
+}
+
 .btn {
     cursor: pointer;
     border: none;
@@ -68,6 +74,10 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
 }
 
+.section {
+    padding: 120px 0;
+}
+
 .container {
     max-width: 1158px;
     margin: 0 auto;
@@ -78,7 +88,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header {
     padding: 24px 0;
-    border-bottom: 1px solid transparent;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -154,7 +164,7 @@ h1, h2, h3, h4, h5, h6, p {
 .hero {
     padding-top:192px;
     text-align: center;
-    display: flex;
+   
 }
 
 
@@ -163,8 +173,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
-   
-    margin-bottom: 48px;
+    margin: 0 auto 48px;
     width: 492px;
 }
 
@@ -177,7 +186,6 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 
     padding: 16px 32px;
-    margin-bottom: 192px;
     min-width: 170px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -188,14 +196,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 /* ----- section ----- */
 .benefits{
-    padding-top: 120px;
+    padding-bottom: 0;
 }
-
-.team,
-.works {
-    padding: 120px 0;
-}
-
 
 .benefits-list,
 .works-list,
@@ -207,6 +209,17 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .team {
     background-color: var(--logo-footer-color);
+}
+
+.team-list-item {
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.wrapper {
+    margin: 32px 16px;
+    text-align: center;
 }
 
 .views .section-title,
@@ -231,17 +244,18 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ----- Portfolio ----- */
 .portfolio {
-    padding: 96px 0 120px 0;
+    padding-top: 96px 0 120px 0;
 }
 
-.portfolio .container{
+/* .portfolio .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .filter{
     margin-bottom: 72px;
+    justify-content: center;
 }
 
 .filter-btn {
@@ -254,20 +268,17 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--logo-web-color);
     background-color: var(--logo-footer-color);
 
-    padding: 16px 8px;
+    padding: 12px 24px;
     border: 1px solid var(--footer-descr-color);
     border-radius: 4px;
 }
 
 .filter-btn:hover,
-.filter-btn:focus {
-    color: var(--logo-web-color);
-    background-color: var(--logo-footer-color);
-}
-
+.filter-btn:focus,
 .filter-btn:active {
     background-color: var(--logo-web-color);
     color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .views {

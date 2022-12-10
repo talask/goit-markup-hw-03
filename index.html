@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- normalize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- my styles -->
     <link rel="stylesheet" href="./css/styles.css">
@@ -27,7 +28,7 @@
                     <span>WEB</span>STUDIO</a>
                 <ul class="list nav-list">
                     <li>
-                        <a href="" class="link nav-link">Studio</a>
+                        <a href="./index.html" class="link nav-link">Studio</a>
                     </li>
                     <li>
                         <a href="./portfolio.html" class="link nav-link">Portfolio</a>
@@ -48,7 +49,7 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="section hero">
             <div class="container">
                 <h1 class="hero-title white">Effective Solutions for Your Business</h1>
                 <button type="button" class="btn hero-btn white">Order Service</button>
@@ -56,7 +57,7 @@
         </section>
         <section class="section benefits">
             <div class="container">
-               <h2 class="visually-hidden">Our benefits</h2>
+                <h2 class="visually-hidden">Our benefits</h2>
 
                 <ul class="list benefits-list">
                     <li>
@@ -101,25 +102,33 @@
             <div class="container">
                 <h2 class="section-title team-title">Our Team</h2>
                 <ul class="list team-list">
-                    <li>
+                    <li class="team-list-item">
                         <img src="./images/img-1-min.jpg" alt="Photo Mark Guerrero" width="264" height="260">
-                        <h3 class="section-title">Mark Guerrero</h3>
-                        <p>Product Designer</p>
+                        <div class="wrapper">
+                            <h3 class="section-title">Mark Guerrero</h3>
+                            <p>Product Designer</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="team-list-item">
                         <img src="./images/img-2-min.jpg" alt="Photo Tom Ford" width="264" height="260">
-                        <h3 class="section-title">Tom Ford</h3>
-                        <p>Frontend Developer.</p>
+                        <div class="wrapper">
+                            <h3 class="section-title">Tom Ford</h3>
+                            <p>Frontend Developer</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="team-list-item">
                         <img src="./images/img-3-min.jpg" alt="Photo Camila Garcia" width="264" height="260">
-                        <h3 class="section-title">Camila Garcia</h3>
-                        <p>Marketing</p>
+                        <div class="wrapper">
+                            <h3 class="section-title">Camila Garcia</h3>
+                            <p>Marketing</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="team-list-item">
                         <img src="./images/img-4-min.jpg" alt="Daniel Wilson" width="264" height="260">
-                        <h3 class="section-title">Daniel Wilson</h3>
-                        <p>UI Designer</p>
+                        <div class="wrapper">
+                            <h3 class="section-title">Daniel Wilson</h3>
+                            <p>UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
