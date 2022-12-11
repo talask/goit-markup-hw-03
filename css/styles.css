@@ -224,7 +224,7 @@ img {
 }
 
 .wrapper {
-    margin: 32px 16px;
+    padding: 32px 16px;
     text-align: center;
 }
 
@@ -250,7 +250,7 @@ img {
 
 /* ----- Portfolio ----- */
 .portfolio {
-    padding-top: 96px 0 120px 0;
+    padding-top: 96px;
 }
 
 .filter{
